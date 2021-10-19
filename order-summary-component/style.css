@@ -59,16 +59,19 @@ button:hover {
 
 .card {
   width: 450px;
-  max-width: 90%;
+  max-width: 87.3%;
 
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
+
+  box-shadow: 0px 15px 15px 0px rgb(125 126 245 / 15%);
 }
 
-.card-cover {
+.card .card-cover {
   display: block;
+  width: 100%;
 }
 
 .card .content {
@@ -145,6 +148,7 @@ button:hover {
   background-color: var(--primary-bright-blue);
   color: white;
   margin-bottom: 16px;
+  box-shadow: 0px 15px 25px 0px rgb(125 126 245 / 40%);
 }
 
 .card .action-btn.proceed:hover {
@@ -152,7 +156,7 @@ button:hover {
 }
 
 .card .action-btn.cancel {
-  background-color: white;
+  background-color: transparent;
   color: var(--neutral-desaturated-blue);
 }
 .card .action-btn.cancel:hover {
@@ -165,4 +169,58 @@ button:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 450px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+
+  .card .content {
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+
+  .card .content > * {
+    max-width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card .content h1 {
+    font-size: 1.4rem;
+  }
+
+  .card .content > p {
+    line-height: 1.65rem;
+    letter-spacing: -0.0045em;
+    max-width: 75%;
+    font-size: 15px;
+    margin-bottom: 23px;
+  }
+
+  .card .order-price,
+  .card .action-btn {
+    border-radius: 11px;
+  }
+
+  .card .order-price {
+    padding: 16px 17px;
+    margin-bottom: 22px;
+  }
+
+  .card .order-price .plan-info {
+    margin-left: 17.5px;
+  }
+
+  .card .order-price .plan-info > * {
+    font-size: 14px;
+  }
+
+  .card .order-price .change-plan {
+    font-size: 13px;
+  }
+  .card .action-btn.proceed {
+    margin-bottom: 6px;
+  }
 }
