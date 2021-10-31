@@ -274,12 +274,13 @@ aside {
   }
 
   body {
-    grid-template-rows: 85px 0.3fr 1fr;
+    grid-template-rows: 85px 0.35fr 1fr;
     grid-template-columns: 1fr;
   }
   header {
     img {
       max-width: 40%;
+      max-height: 75px;
     }
   }
   main {
