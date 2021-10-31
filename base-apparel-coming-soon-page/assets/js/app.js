@@ -5,6 +5,9 @@ const emailFormErrorMessage = mailingListForm.querySelector("p");
 
 mailingListForm.addEventListener("submit", submitData);
 emailFormInput.addEventListener("input", updateInputValue);
+emailCelebrationDiv.addEventListener("click", () =>
+  emailCelebrationDiv.classList.remove("celebrate")
+);
 
 function checkEmail(email) {
   const emailRegex =
@@ -31,7 +34,7 @@ function handleAppreciation() {
   toggleError(false);
   emailFormInput.value = "";
   //   TODO show that value is saved
-  emailCelebrationDiv.classList.add('celebrate')
+  emailCelebrationDiv.classList.add("celebrate");
 }
 
 const errorMessages = {
@@ -55,4 +58,8 @@ function handleError(userEmail) {
 function toggleError(isError = false) {
   if (isError) mailingListForm.classList.add("error-happened");
   else mailingListForm.classList.remove("error-happened");
+}
+
+if (!CSS.supports("backdrop-filter: blur(10px)")) {
+  emailCelebrationDiv.style.backgroundColor = "rgba(255,255,255,0.8)";
 }

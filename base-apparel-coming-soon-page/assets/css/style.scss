@@ -312,7 +312,7 @@ aside {
 
         &.error-happened button::before {
           // content: "";
-          width: 55px;
+          width: 35px;
           // height: 100%;
 
           // background-image: url(../images/icon-error.svg);
@@ -322,7 +322,7 @@ aside {
 
           // position: absolute;
           // top: 0;
-          left: -55px;
+          left: -35px;
         }
 
         &.error-happened > p {

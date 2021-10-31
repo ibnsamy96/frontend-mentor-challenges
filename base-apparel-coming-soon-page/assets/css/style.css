@@ -305,16 +305,16 @@ aside {
     margin-bottom: 35px;
   }
   main div form.error-happened input {
-    padding: 17px 155px 17px 25px;
+    padding: 17px 103px 17px 25px;
   }
   main div form.error-happened button::before {
-    width: 55px;
-    left: -55px;
+    width: 35px;
+    left: -35px;
   }
   main div form input {
     font-size: 14px;
     letter-spacing: 0px;
-    padding: 17px 112px 17px 25px;
+    padding: 17px 70px 17px 25px;
   }
   main div form button {
     font-size: 14px;
