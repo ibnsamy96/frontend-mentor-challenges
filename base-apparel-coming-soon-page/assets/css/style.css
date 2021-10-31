@@ -1,1 +1,356 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 157px 1fr;
+      grid-template-rows: 157px 1fr;
+  -ms-grid-columns: 1.36fr 1fr;
+      grid-template-columns: 1.36fr 1fr;
+}
+
+#bg-div {
+  background-image: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, #ffffff 0%, #fff5f5 100%);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  grid-row: 1/-1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+#email-celebration-div {
+  display: none;
+  position: fixed;
+  /* background-color: whitesmoke; */
+  /* width: 300px;
+    height: 0px; */
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /* transform: translate(-50%, -50%); */
+  z-index: 5000000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#email-celebration-div.celebrate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#email-celebration-div > lottie-player {
+  width: 80%;
+  height: 80%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#email-celebration-div > p {
+  color: #3b3232;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.container, header, main {
+  padding-left: 17%;
+  padding-right: 28%;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  display: block;
+}
+
+main {
+  grid-row: 2/-1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+main > div {
+  margin-top: 7%;
+}
+
+main > div h1 {
+  text-transform: uppercase;
+  color: #413a3a;
+  font-weight: 600;
+  font-size: 69px;
+  line-height: 75px;
+  letter-spacing: 16px;
+}
+
+main > div h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+main > div > p {
+  font-size: 16px;
+  color: #ce9797;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+main > div form {
+  position: relative;
+}
+
+main > div form.error-happened input {
+  opacity: 1;
+  border-color: #f96262;
+  padding: 20px 155px 20px 30px;
+  color: #413a3a;
+}
+
+main > div form.error-happened button::before {
+  content: "";
+  width: 55px;
+  height: 100%;
+  background-image: url(../images/icon-error.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  top: 0;
+  left: -55px;
+}
+
+main > div form.error-happened > p {
+  opacity: 1;
+}
+
+main > div form input {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #ce9797;
+  width: 100%;
+  padding: 20px 112px 20px 30px;
+  background-color: transparent;
+  border: 2px solid #ce9797;
+  border-radius: 100px;
+  opacity: 0.5;
+  position: relative;
+}
+
+main > div form input:focus, main > div form input:focus-visible, main > div form input:active {
+  outline: none;
+  opacity: 1;
+  color: #f96262;
+}
+
+main > div form button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  border-radius: 100px;
+  font-size: 16px;
+  padding: 20px 48px;
+  border: none;
+  background: #f8bfbf;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -webkit-box-shadow: 0px 10px 30px 5px;
+          box-shadow: 0px 10px 30px 5px;
+  color: #ce979770;
+  -webkit-transition: color 500ms, -webkit-box-shadow 500ms;
+  transition: color 500ms, -webkit-box-shadow 500ms;
+  transition: box-shadow 500ms, color 500ms;
+  transition: box-shadow 500ms, color 500ms, -webkit-box-shadow 500ms;
+}
+
+main > div form button:focus, main > div form button:focus-visible, main > div form button:active {
+  outline: none;
+}
+
+main > div form button img {
+  height: 20px;
+}
+
+main > div form button:hover {
+  background: transparent;
+  background-color: #f8cecf;
+  -webkit-box-shadow: 0px 12px 30px 10px;
+          box-shadow: 0px 12px 30px 10px;
+  color: #ce979794;
+}
+
+main > div form p {
+  opacity: 0;
+  padding: 10px 30px;
+  color: #f96262;
+}
+
+aside {
+  grid-row: 1/-1;
+  grid-column: 2/-1;
+  background-image: url("../images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1024px) {
+  body {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .container, header, main {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+  }
+  #bg-div {
+    -webkit-box-shadow: 20px 0px 40px 0px;
+            box-shadow: 20px 0px 40px 0px;
+    color: #00000036;
+    z-index: 20;
+  }
+  header,
+  main {
+    z-index: 30;
+  }
+}
+
+@media (max-width: 600px) {
+  #email-celebration-div {
+    /* transform: translate(-50%, -50%); */
+  }
+  #email-celebration-div > p {
+    font-size: 20px;
+    max-width: 80%;
+  }
+  body {
+    -ms-grid-rows: 85px 0.3fr 1fr;
+        grid-template-rows: 85px 0.3fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  header img {
+    max-width: 40%;
+  }
+  main {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  main div {
+    text-align: center;
+    margin-top: 0;
+  }
+  main div > h1 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10px;
+  }
+  main div > p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  main div form.error-happened input {
+    padding: 17px 155px 17px 25px;
+  }
+  main div form.error-happened button::before {
+    width: 55px;
+    left: -55px;
+  }
+  main div form input {
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding: 17px 112px 17px 25px;
+  }
+  main div form button {
+    font-size: 14px;
+    padding: 16px 28px;
+  }
+  main div form button img {
+    height: 21px;
+  }
+  main div form p {
+    padding: 10px 30px;
+  }
+  aside {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    z-index: 0;
+    background-position: 0 -40px;
+  }
+  #bg-div {
+    grid-row: 1/-1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  #bg-div {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: transparent;
+    z-index: 0;
+  }
+  header,
+  main {
+    z-index: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

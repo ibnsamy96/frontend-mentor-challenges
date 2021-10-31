@@ -1,0 +1,25 @@
+@mixin default-properties-for-all-elements($main-font) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
+@mixin backgroundImg-fullH-autoW-TL-noRepeat($img) {
+  background-image: url($img), linear-gradient(135deg, #ffffff 0%, #fff5f5 100%);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  //   background: rgb(255, 255, 255);
+  //   background:
+}
+
+@mixin apply-container($ml, $mr) {
+  padding-left: $ml;
+  padding-right: $mr;
+}
+
+@mixin hideOutline {
+  outline: none;
+}
